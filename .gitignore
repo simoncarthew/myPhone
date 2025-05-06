@@ -1,0 +1,9 @@
+Libraries
+Main/lib/Adafruit_BusIO
+Main/lib/Adafruit_GFX
+Main/lib/TFT_eSPI
+Main/lib/Adafruit_ST7789
+Software
+Testing
+.vscode
+Documentation/.obsidian

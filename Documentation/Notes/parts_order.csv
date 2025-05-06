@@ -1,0 +1,5 @@
+subsystem,part_no,part_name,quantity,unit_price,total price,link,,,,,,
+brain,-,esp32 dev module,1,-,-,-,,,,,,
+keyboard,ATMEGA328-PU,Arduino MC,2,48.42,,https://www.digikey.co.za/en/products/detail/microchip-technology/ATMEGA328-PU/2271026subsystem,part_no,part_name,quantity,unit_price,total price,link
+brain,-,esp32 dev module,1,-,-,-,,,,,,
+keyboard,ATMEGA328-PU,Arduino MC,2,48.42,,https://www.digikey.co.za/en/products/detail/microchip-technology/ATMEGA328-PU/2271026,,,,,,

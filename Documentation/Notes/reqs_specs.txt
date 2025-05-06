@@ -1,0 +1,6 @@
+REQUIREMENTS
+	- makes phone calls
+	- recieves and sends sms's
+	- stores data (.mp3,.mp4,contacts,etc.)
+	- plays music
+	- records sound
