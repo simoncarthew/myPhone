@@ -4,10 +4,10 @@ namespace MyPhone{
 
 // Constructor
 LCD::LCD(int CS_PIN, int DC_PIN, int RST_PIN, short ScreenWidth, short ScreenHeight) : Screen(), ScreenWidth(ScreenWidth), ScreenHeight(ScreenHeight){
-
     Screen.init();
     Screen.setRotation(3);
     Screen.fillScreen(TFT_BLACK);
+    Screen.setTextFont(1);
 }
 
 // Destructor

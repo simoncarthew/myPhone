@@ -20,7 +20,8 @@ ScrollAbleList::ScrollAbleList(LCD& lcd, const std::vector<std::string>& Items, 
     TotalVisibleItems = ScreenHeight / BoxHeight + 1;
 
     // Create Sprite    
-    frame.setColorDepth(16);
+    frame.setColorDepth(1);
+    frame.setTextFont(1);
     frame.createSprite(ScreenWidth, ScreenHeight);
     frame.fillSprite(TFT_BLACK);
 
@@ -36,6 +37,12 @@ ScrollAbleList::~ScrollAbleList() {
 
 // Public Methods
 void ScrollAbleList::Display(){
+    // TFT_eSprite test = TFT_eSprite(&Screen);
+    // test.setColorDepth(8);
+    // test.setTextFont(1);
+    // test.createSprite(ScreenWidth, ScreenHeight);
+    frame.fillSprite(TFT_BLACK);
+
     // Clear Screen
     frame.fillScreen(TFT_BLACK);
 
