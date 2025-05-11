@@ -18,4 +18,4 @@ At the end of every continuous task, the thread checks for support request. If t
 
 Continuous or requested tasks may output an interrupt for the main thread that is shared via the global interrupt string. 
 
-![Global Architecture](Documentation/Images/GlobalArchitecture.png)
+![Global Architecture](Documentation/Images/GlobalArchitecture.jpg)
