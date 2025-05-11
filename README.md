@@ -14,6 +14,8 @@ Every application must check for interrupts from supporting thread in idle state
 ### Supporting Thread
 On start up the supporting thread enters the continuous task function. Here, it calls the continuous function of every application that requires continuous support. The supporting thread keeps track of time and passes time since of last call to the continuous tasks and the continuous tasks themselves decides if they should run.
 
-At the end of every continuous task, the thread checks for support request. If there is a request, the request task function of the necessary class is called.
+At the end of every continuous task, the thread checks for support request. If there is a request, the request task function of the necessary application is called.
 
 Continuous or requested tasks may output an interrupt for the main thread that is shared via the global interrupt string. 
+
+![Global Architecture](Documentation/Images/GlobalArchitecture.png)
