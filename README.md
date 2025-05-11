@@ -27,7 +27,7 @@ All applications are inherited classes of the application class.
 ### Main Thread
 Applications on the main thread have different states that can be traversed by taking actions with buttons. Actions may not change states but may just update widgets. Main thread functions MUST be overridden to preserved architecture. When an application is begun, an interrupt can be passed to it to the ensure that it handles the called interrupt.
 
-## Supporting Thread
+### Supporting Thread
 The continuous and requested functions are used by the supporting thread. The continuous function is for performing repeated actions at fixed intervals that are required by the application. The requested function is for making asynchronous requests for work from the supporting thread.
 
 ### Other
@@ -37,10 +37,11 @@ Other functions are unique to each inherited application class and are called by
 
 ## PERIPHERAL CLASSES
 
-Hardware peripheral classes follow no specific architecture. They just compartmentalize the various hardware functionality that can be accessed by applications in the form of functions. 
+### General Peripherals
+Hardware peripheral classes follow no specific architecture. They just compartmentalize the various hardware functionality that can be accessed by applications in the form of functions. Peripherals that are intended to be used across threads are protected using mutex's.
 
-Peripherals that are intended to be used across threads are protected using mutex's.
 
+### LCD Class
 The LCD class is the only exception. It is the base class that all display widgets inherit from. To generalize the GUI across applications, GUI widget classes are used. These create interactive GUI objects that can be used by any application. They make the use of GUI elements that may have maintained or previous states easier and reduce the amount of repeated code across applications. Some examples include, ScrollAbleList, ScrollableChat, TextBox, ScrollAbleWallOfText, LoadingBar, etc. 
 
 ![Hardware Peripheral Classes](Documentation/Images/HardwarePeripherals.jpg)
