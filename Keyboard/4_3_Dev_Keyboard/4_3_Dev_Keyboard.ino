@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include <SoftwareSerial.h>
 
 // SERIAL OUTPUT
@@ -9,7 +8,7 @@ const int no_columns = 3;
 const int no_rows = 4;
 
 // PINS
-const int colPins[no_columns] = {7, 4, 2};
+const int colPins[no_columns] = {7, 6, 5};
 const int rowPins[no_rows] = {A1, A2, A3, A4};
 
 // Key labels (optional for display)
